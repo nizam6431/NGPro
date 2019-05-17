@@ -6,23 +6,30 @@ import { RouterModule }   from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NsTableComponent } from './ns-table/ns-table.component';
-
-RouterModule.forRoot([
-  {
-    path: 'table',
-    component: NsTableComponent
-  }
-]);
+import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
+import { AppTopnavComponent } from './app-topnav/app-topnav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NsTableComponent
+    NsTableComponent,
+    MyDashboardComponent,
+    AppTopnavComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot([
+      {
+        path: 'dashboard',
+        component: MyDashboardComponent
+      },
+    {
+      path: 'table',
+      component: NsTableComponent
+    }
+  ])
   ],
   providers: [],
   bootstrap: [AppComponent]
