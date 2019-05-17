@@ -6,7 +6,6 @@ import { RouterModule }   from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NsTableComponent } from './ns-table/ns-table.component';
-import { MyDashboardComponent } from './my-dashboard/my-dashboard.component';
 import { AppTopnavComponent } from './app-topnav/app-topnav.component';
 import { AppRadioButtonComponent } from './app-radio-button/app-radio-button.component';
 import { AppFormComponent } from './app-form/app-form.component';
@@ -23,7 +22,6 @@ import { AppTextboxComponent } from './app-textbox/app-textbox.component';
   declarations: [
     AppComponent,
     NsTableComponent,
-    MyDashboardComponent,
     AppTopnavComponent,
     AppRadioButtonComponent,
     AppFormComponent,
@@ -40,10 +38,6 @@ import { AppTextboxComponent } from './app-textbox/app-textbox.component';
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
-      {
-        path: 'dashboard',
-        component: MyDashboardComponent
-      },
     {
       path: 'table',
       component: NsTableComponent
