@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ns-table.component.css']
 })
 export class NsTableComponent implements OnInit {
-
+  name: string;
   constructor() { }
 
   ngOnInit() {
+    this.name = 'nizam siddiqui';
   }
 
 }
